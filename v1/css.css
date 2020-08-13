@@ -1,0 +1,30 @@
+html , body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.hat {
+    width: 75%;
+}
+
+.title {
+    background-color: rgb(180, 162, 61);
+    border: 4px solid rgb(180, 162, 61);
+    text-align: center;
+    margin: 0;
+    padding: 10% 0 10% 0;
+    position: relative;
+}
+
+.reg {
+    background-color: rgb(136, 123, 48);
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    left: 75%;
+}
+main {
+    background-color: rgb(35, 126, 76);
+    height: 100%;
+}
