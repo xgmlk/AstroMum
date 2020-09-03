@@ -1,0 +1,140 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 58, 34);
+    overflow-x: hidden;
+}
+
+header {
+    height: 20%;
+    background-color: rgb(161, 224, 79);
+}
+
+main {
+    background-color: yellow;
+    width: 100%;
+    height: 80%;
+}
+
+#logo {
+    position: absolute;
+    width: 17%;
+    height: 16%;
+    display: block;
+    margin: 1%;
+}
+
+.info-btn {
+    position: absolute;
+    width: 65%;
+    left: 15%;
+    top: 1%;
+    height: 8%;
+    text-align: center;
+    
+}
+.more {
+    display: inline-block;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 7px solid red;
+    border-radius: 0%;
+}
+
+.feedback-box {
+    position: absolute;
+    left: 55%;
+    bottom: 87%;
+    padding: 20px 115px 20px 115px;
+}
+
+.feedback-btn {
+    position: relative;
+    padding: 20px 115px 20px 115px;
+    cursor: pointer;
+    right: -35%;
+}
+
+.first-main-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(209, 209, 209);
+}
+
+.headline-buy-btn {
+    position: relative;
+    background-color: rgb(209, 209, 209);
+    width: 50%;
+    height: 80%;
+    top: 15%;
+}
+
+.first-text-title {
+    box-shadow: inset 0 0 1px;
+    padding-bottom: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.headline {
+    position: relative;
+    left: 3%;
+    top: 15%;
+}
+
+.headline-text {
+    position: relative;
+    top: 20%;
+    margin-left: 4%;
+    width: 85%;
+}
+
+#line {
+    position: absolute;
+    top: 65%;
+    width: 35%;
+    left: 15%;
+    background-color: rgb(221, 206, 0);
+    color: rgb(221, 206, 0);
+    border: none;
+    height: 2px;
+    /* box-shadow: 0 -1px 10px 1px rgba(0, 0, 0, 0.555); */
+}
+
+.buy-btn {
+    position: absolute;
+    left: 15%;
+    top: 70%;
+    width: 65%;
+    height: 10%;
+    cursor: pointer;
+}
+
+.pres-pic {
+    position: relative;
+    background-color: rgb(230, 92, 92);
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    bottom: 80%;
+}
+
+.pres-img {
+    position: relative;
+    background-color: rgb(112, 13, 13);
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+}
+
+.second-main-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(114, 68, 42);
+}
