@@ -2,36 +2,17 @@
 
 let more = document.querySelectorAll('.more'),
     buttons = document.querySelectorAll('button'),
-    anBox = document.querySelector('#anima');
+    anBox = document.querySelector('#anima'),
+    value = 100;
 
-    function animationl() {
-        let pos = 100,
-            id = setInterval(frame, 10);
-    
-                function frame () {
-                    if (pos == 0) {
-                        clearInterval(id);
-                    } else {
-                        pos--;
-                        anBox.style.right = pos + '%';
-                    } 
-                }
-        }
+buttons[1].addEventListener('click', function() {
+    value = (value === 0) ? 100 : 0;
+
+    anBox.style.right = value + '%';
+    buttons[1].style.outline = '-webkit-focus-ring-color auto 1px';
+});
 
 
-        function animationr() {
-            let pos = 0,
-                id = setInterval(frame, 10);
-        
-                    function frame () {
-                        if (pos == 100) {
-                            clearInterval(id);
-                        } else {
-                            pos++;
-                            anBox.style.right = pos + '%';
-                        } 
-                    }
-            }
 
 
 buttons[0].addEventListener('click', function () {
@@ -43,26 +24,6 @@ buttons[0].addEventListener('mouseleave', function () {
     buttons[0].style.outline = 'none';
 });
 
-    buttons[1].addEventListener('click', function l() {
-        buttons[1].style.outline = '-webkit-focus-ring-color auto 1px';
-        animationl();
-        console.log('l');
-        buttons[1].removeEventListener('click', l);
-        buttons[1].addEventListener('click', function r() {
-            buttons[1].style.outline = '-webkit-focus-ring-color auto 1px';
-            animationr();
-            console.log('r');
-            buttons[1].removeEventListener('click', r);
-            buttons[1].addEventListener('click', l);
-        });
-    });
-
-
-// buttons[1].addEventListener('click', function () {
-//     buttons[1].style.outline = '-webkit-focus-ring-color auto 1px';
-//     removeEventListener(animationl);
-//     addEventListener(animationl);
-// });
 
 buttons[1].addEventListener('mouseleave', function () {
     buttons[1].style.outline = 'none';
